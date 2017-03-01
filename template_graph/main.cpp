@@ -15,23 +15,8 @@ int word_deviation(const std::string & w1, const std::string & w2);
 int main(int argc, const char * argv[])
 {
     graph<std::string> g;
-//    g.add_vertex("Nick");
-//    g.add_vertex("Name");
-//    g.add_vertex("Steve");
-//    g.add_vertex("Rogers");
-//    g.add_edge("Nick", "Name");
-//    g.add_edge("Steve", "Name");
-//    g.add_edge("Steve", "Rogers");
-//    
-//    std::cout << "Vertices: " << g.n() << " Edges " << g.m() << std::endl;
-    
-//    auto path = g.shortest_path("Nick", "Rogers");
-//    for (auto e: path)
-//        std::cout << e << std::endl;
     
     std::vector<std::string> wordVec;
-    
-//    std::fstream is("/Users/nicholasrogers/Desktop/dictionary.txt");
     std::fstream is("/Users/nicholasrogers/Documents/five_letter_dictionary.txt");
     if (is.fail())
     {
@@ -46,7 +31,6 @@ int main(int argc, const char * argv[])
         if (!s.empty())
         {
             wordVec.push_back(s);
-//            g.add_vertex(s);
         }
     }
     is.close();
